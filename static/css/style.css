@@ -1,0 +1,98 @@
+body{
+    background-image: url('https://media.istockphoto.com/id/1178294216/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D1%83%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D0%BA%D0%BE%D0%B6%D0%B5%D0%B9-%D0%B1%D0%B5%D1%81%D1%88%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B-%D1%81-%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BB%D0%B8%D0%BD%D0%B8%D0%B8-%D0%BA%D0%B0%D0%BF%D0%BB%D1%8F-%D0%B3%D0%B8%D0%B0%D0%BB%D1%83%D1%80%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D1%82%D1%8B-%D1%81%D1%8B%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%B0.jpg?s=612x612&w=0&k=20&c=KSH9Il1bBNNKFcPPWJXYSTAILEuxQ8viLwNNN26fGH8=');
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'kanit',cursive;
+    color: rgb(243, 238, 238);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    box-shadow: 2px 2px 2px #181818;
+}
+.img-preview {
+    width: 256px;
+    height: 256px;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-left: 7rem;
+    margin-bottom: 1em;    
+}
+
+.img-preview div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4;
+}
+
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 14rem;
+    animation: spin 1s linear infinite;
+}
+#btn-predict{
+    font-size: inherit;
+    margin-top: 10px;
+    border: none;
+    color:#ffdbc1;
+    background-color: #272829;
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+#btn-predict:hover{
+    box-shadow: 1px 1px 10px #e66a05;
+}
+
+#result{
+    color: #e66a05;
+    font-size: 22px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
